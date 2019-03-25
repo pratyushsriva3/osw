@@ -1,0 +1,32 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "com.pojo.User" table = "hospital">
+      
+      <meta attribute = "class-description">
+         This class contains the employee detail. 
+      </meta>
+      
+      <id name = "id" type = "int" column = "Hospital_Id">
+        
+      </id>
+      
+      <property name = "hospitalname" column = "HospitalName" type = "string"/>
+      <property name = "addr1" column = "Addrline1" type = "string"/>
+      <property name = "addr2" column = "Addrline2" type = "string"/>
+      <property name = "state" column = "State" type = "string"/>
+      <property name = "city" column = "City" type = "string"/>
+      <property name = "pin" column = "Pin" type = "int"/>
+      <property name = "certif" column = "Certifications" type = "string"/>
+      <property name = "so" column = "Successful Operations" type = "string"/>
+      <property name = "ac" column = "Achievements" type = "string"/>
+      <property name = "status" column = "Status" type = "string"/>
+      <property name = "uid" column = "User_Id" type = "int"/>
+      <property name = "name" column = "Username" type = "string"/>
+      <property name = "password" column = "password" type = "string"/>
+      
+   </class>
+</hibernate-mapping>
